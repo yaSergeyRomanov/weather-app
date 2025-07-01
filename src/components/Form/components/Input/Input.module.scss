@@ -1,0 +1,18 @@
+@use "../../../../styles/variables.scss" as *;
+
+.input {
+  padding: 15px 20px;
+  display: block;
+  width: 100%;
+  background: none;
+  border: 2px solid $white-2;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 20px;
+  color: $white-1;
+
+  &::placeholder {
+    font: inherit;
+    color: $white-2;
+  }
+}

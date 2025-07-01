@@ -1,0 +1,81 @@
+@use "../../styles/variables.scss" as *;
+
+.fromWrapper {
+  margin: 0 auto;
+  padding: 40px;
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+
+.formInner {
+  margin: auto 0;
+  padding: 80px 60px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba($black-2, 10%);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 12px 8px rgba($black-2, 20%) inset;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: 170px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  color: $purple-1;
+  text-transform: uppercase;
+}
+
+.error {
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: block;
+}
+
+.temp {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 700;
+  font-size: 100px;
+  text-align: center;
+  line-height: 1;
+}
+
+.info {
+  margin-bottom: 60px;
+  display: block;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.submit {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
