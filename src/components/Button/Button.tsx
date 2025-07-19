@@ -1,6 +1,6 @@
 import cn from "classnames";
 import styles from "./Button.module.scss";
-import type { ButtonProps } from "./Button.type";
+import type { ButtonProps } from "./type";
 
 export const Button = ({
   className,

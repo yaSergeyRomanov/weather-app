@@ -13,7 +13,6 @@ export const useWether = (defaultCity = "Краснодар") => {
       const response = await fetch(url);
       const data = await response.json();
       setWeather(data);
-      // console.log(data);
 
       if (data.message && data.message.includes("city not found")) {
         setError("Такого города нет, смотри глобус");

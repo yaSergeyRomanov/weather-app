@@ -1,6 +1,6 @@
 import cn from "classnames";
 import styles from "./Icon.module.scss";
-import type { IconType } from "./Icon.type";
+import type { IconType } from "./type";
 
 export const Icon = ({ id, className }: IconType) => {
   const href = `sprite.svg#${id}`;

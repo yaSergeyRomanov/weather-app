@@ -1,4 +1,4 @@
-import type { HeadlingProps } from "./Headling.type";
+import type { HeadlingProps } from "./type";
 import cn from "classnames";
 import styles from "./Headling.module.scss";
 
